@@ -7,12 +7,12 @@ package leetcode
 */
 
 fun main() {
-    val twoSum = Solution()
+    val twoSum = TwoSum()
     val r = twoSum.twoSum(intArrayOf(2, 7, 11, 15), 9)
     print("[" + r[0] + "," + r[1] + "]")
 }
 
-class Solution {
+class TwoSum {
     fun twoSum(nums: IntArray, target: Int): IntArray {
         for ((i, item) in nums.withIndex()) {
             var index = i
