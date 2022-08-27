@@ -1,5 +1,5 @@
 package leetcode
-// Question : https://leetcode.com/problems/palindrome-number/
+// Question link : https://leetcode.com/problems/palindrome-number/
 fun main() {
     val palindromeNumber = PalindromeNumber()
     println(palindromeNumber.isPalindrome(123))

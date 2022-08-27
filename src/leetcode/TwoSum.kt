@@ -1,5 +1,5 @@
 package leetcode
-// Question : https://leetcode.com/problems/two-sum/
+// Question link : https://leetcode.com/problems/two-sum/
 fun main() {
     val twoSum = TwoSum()
     val r = twoSum.twoSum(intArrayOf(2, 7, 11, 15), 9)
