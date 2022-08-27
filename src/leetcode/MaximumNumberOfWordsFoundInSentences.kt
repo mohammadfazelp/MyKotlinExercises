@@ -1,5 +1,5 @@
 package leetcode
-// Question link : https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/submissions/
+// Question link : https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
 import java.util.regex.Pattern
 
 fun main() {
