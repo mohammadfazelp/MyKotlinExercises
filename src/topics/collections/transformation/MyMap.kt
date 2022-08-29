@@ -1,4 +1,4 @@
-package topics.transformation
+package topics.collections.transformation
 /*
  * The mapping transformation creates a collection from the results of a function on the elements of another collection.
  * The basic mapping function is map().

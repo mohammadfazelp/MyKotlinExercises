@@ -1,4 +1,4 @@
-package topics.transformation
+package topics.collections.transformation
 
 /*
  * flatten() : If you operate nested collections, you may find the standard library functions that provide flat access

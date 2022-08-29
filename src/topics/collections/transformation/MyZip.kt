@@ -1,4 +1,4 @@
-package topics.transformation
+package topics.collections.transformation
 /*
  * Zipping transformation is building pairs from elements with the same positions in both collections.
  * In the Kotlin standard library, this is done by the zip() extension function.

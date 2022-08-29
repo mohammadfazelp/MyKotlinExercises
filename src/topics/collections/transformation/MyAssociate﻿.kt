@@ -1,4 +1,4 @@
-package topics.transformation
+package topics.collections.transformation
 /*
  * Association transformations allow building maps from the collection elements and certain values associated with them.
  * In different association types, the elements can be either keys or values in the association map.
