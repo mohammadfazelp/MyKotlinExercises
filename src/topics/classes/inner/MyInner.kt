@@ -1,4 +1,4 @@
-package topics.classes.nested
+package topics.classes.inner
 
 import java.awt.Window
 
