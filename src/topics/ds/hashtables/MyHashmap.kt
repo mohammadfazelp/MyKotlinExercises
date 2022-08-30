@@ -20,7 +20,7 @@ package topics.ds.hashtables
  * - Applications of Hash Tables: Pattern Matching, Compilers, File Systems
  */
 
-fun main(args: Array<String>) {
+fun main() {
     //A simple example of HashMap class define with empty "HashMap of <String, Int>"
     val hashMap: HashMap<String, Int> = HashMap()
 
