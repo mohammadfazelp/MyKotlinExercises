@@ -84,3 +84,11 @@ class Injector2() {
     Client: Represents the object that depends on the service (ClassA)
     Injector: Represents the object responsible for constructing the services and injecting them into the client (Injector)
  */
+
+/*
+ * Two ways of injecting dependencies:
+ * Constructor injection: Where dependencies are passed through the constructor.
+ * Field injection: Where dependencies are passed through setter methods or by changing the instance variables.
+ * This can also be referred to as setter injection, and it can also be expanded to interface injection in which
+ * the setter method is abstracted to an interface.
+ */
