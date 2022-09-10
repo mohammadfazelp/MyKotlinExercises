@@ -11,10 +11,10 @@ fun main() {
     println(numbers.windowed(3))
 
     val numbs = (1..10).toList()
-    println(numbers.windowed(3, step = 2, partialWindows = true))
+    println(numbs.windowed(3, step = 2, partialWindows = true))
 //    println(numbers.windowed(3) { it.sum() })
 
     val n = listOf("one", "two", "three", "four", "five")
-    println(numbers.zipWithNext())
-    println(numbers.zipWithNext() { s1, s2 -> s1.length > s2.length})
+    println(n.zipWithNext())
+    println(n.zipWithNext() { s1, s2 -> s1.length > s2.length})
 }

@@ -27,7 +27,6 @@ class BaseImpl(val x: Int) : Base {
 // The by-clause in the supertype list for Derived indicates that b will be stored internally in objects of Derived
 // and the compiler will generate all the methods of Base that forward to b.
 class Derived(b: Base) : Base by b
-
 fun main() {
     val b = BaseImpl(10)
     Derived(b).print() // prints 10
@@ -52,13 +51,16 @@ fun main() {
      * A lazy delegate computes the value on the first access, stores it, and then returns the stored value.
      * As its name implies, you use lazy when the value is expensive to compute and doesn't change after computation
      */
-    val lazy: String by lazy { "An expensive computation" }
+    val lazy: String by lazy {
+        println("lazy started!")
+        "an expensive computation"
+    }
 
     /*
      * An observable delegate offers a hook when the value is accessed,so you can execute code afterward.
      */
     val observed = "Observed"
-    val observable: String by Delegates.observable(observed) {
+    var observable: String by Delegates.observable(observed) {
             _, old, new -> println("old: $old, new: $new")
     }
 
@@ -70,6 +72,8 @@ fun main() {
     val vetoable: String by Delegates.vetoable(observed) {
             _, _, _ -> Random.nextBoolean()
     }
+
+    println("lazy for $lazy")
 }
 
 interface Base2 {
@@ -89,7 +93,7 @@ class Base2Impl(val x: Int) : Base2 {
 
 class Derived2(b: Base2) : Base2 by b {
     override fun printMessage() {
-        print("abc")
+        println("abc")
     }
 }
 

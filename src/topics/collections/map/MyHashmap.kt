@@ -4,7 +4,7 @@ package topics.ds.hashtables
 // https://www.studytonight.com/advanced-data-structures/hash-table-data-structure
 
 /**
- * - The hash table based implementation of HashMap does not guarantees about the order of specified data of key,
+ * - The hash table based implementation of HashMap does not guarantee about the order of specified data of key,
  * value and entries of collections.
  * - Kotlin HashMap provides constant time or O(1) complexity for basic operations like get and put.
  * - searching in the HashMap containsKey() is just a get() that throws away the retrieved value, it’s O(1)

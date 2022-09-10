@@ -11,7 +11,10 @@ fun main() {
     inlinedFunc({
         println("Lambda expression 1")
         // return    // It gives compiler error
-    }, { println("Lambda expression 2") })
+    }, {
+        println("Lambda expression 2")
+        return
+    })
 
     println("Main function ends")
 }

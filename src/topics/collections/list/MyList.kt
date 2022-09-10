@@ -38,18 +38,18 @@ fun main() {
     //numbers.get(5)                         // exception!
     println(numbers.getOrNull(5))             // null
     println(numbers.getOrElse(5, { it }))        // 5
-    print("---------------------------------------------------------")
+    println("---------------------------------------------------------")
     val numbers2 = listOf(1, 2, 3, 4, 2, 5)
     println(numbers2.indexOf(2))
     println(numbers2.lastIndexOf(2))
-    print("---------------------------------------------------------")
+    println("---------------------------------------------------------")
     val numbers3 = mutableListOf("one", "two", "three", "four")
     numbers3.sort()
     println(numbers3)
     println(numbers3.binarySearch("two"))  // 3
     println(numbers3.binarySearch("z")) // -5
     println(numbers3.binarySearch("two", 0, 2))  // -3
-    print("---------------------------------------------------------")
+    println("---------------------------------------------------------")
     val pList = listOf(
         Product("WebStorm", 49.0),
         Product("AppCode", 99.0),
@@ -59,11 +59,11 @@ fun main() {
     println(
         pList.binarySearch(Product("AppCode", 99.0), compareBy<Product> { it.price }.thenBy { it.name })
     )
-    print("---------------------------------------------------------")
+    println("---------------------------------------------------------")
     val numbers4 = mutableListOf(1, 2, 3, 4)
     numbers4.fill(3)
     println(numbers4)
-    print("---------------------------------------------------------")
+    println("---------------------------------------------------------")
     val _numbers = mutableListOf("one", "two", "three", "four")
     println(_numbers)
     _numbers.sort()
@@ -83,7 +83,6 @@ fun main() {
     println("Shuffle: $_numbers")
     _numbers.shuffle()
     println("Shuffle: $_numbers")
-
     _numbers.reverse()
     println("Reverse: $_numbers")
 }
