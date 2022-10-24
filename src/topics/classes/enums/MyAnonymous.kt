@@ -22,6 +22,6 @@ enum class ProtocolState {
 fun main() {
     val sss = ProtocolState.TALKING
     val ddd = ProtocolState.WAITING
-    sss.signal()
-    ddd.signal()
+    println(sss.signal())
+    println(ddd.signal())
 }

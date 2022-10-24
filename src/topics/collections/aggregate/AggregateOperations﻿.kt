@@ -46,11 +46,15 @@ fun main() {
 
     val numbers5 = listOf(5, 2, 10, 4)
     // fold() is used for calculating the sum of doubled elements
-    val sumDoubled = numbers5.fold(0) { sum, element -> sum + element * 2 }
+    val sumDoubled = numbers5.fold(0) { sum, element ->
+        sum + element * 2
+    }
     println(sumDoubled) // prints 42
     //it will return another result because it uses the list's first and second elements as arguments on the first step,
     // so the first element won't be doubled.
-    val simpleSum = numbers5.reduce { sum, element -> sum + element }
+    val simpleSum = numbers5.reduce { sum, element ->
+        sum + element
+    }
     println(simpleSum)  // prints 21
 
     //incorrect: the first element isn't doubled in the result

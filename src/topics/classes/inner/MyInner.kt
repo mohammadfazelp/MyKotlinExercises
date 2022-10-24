@@ -1,6 +1,5 @@
 package topics.classes.inner
 
-import java.awt.Window
 
 fun main() {
     val demo = Outer2().Inner().foo() // == 1
@@ -14,6 +13,9 @@ fun main() {
 //
 //        override fun mouseEntered(e: MouseEvent) { ... }
 //    })
+
+    val b = OuterClass.InnerClass()
+    b.test()
 }
 
 class Outer2 {
@@ -33,6 +35,14 @@ interface OuterInterface {
 }
 
 class OuterClass {
-    class InnerClass
+
+    fun test(){
+        print("Hi from OuterClass!")
+    }
+    class InnerClass {
+        fun test(){
+            print("From inner class")
+        }
+    }
     interface InnerInterface
 }
